@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+.content__left {
+    position: relative;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.content__left img {
+    width: 30vw;
+    transform: translateY(-50px);
+}
+
+.content__right {
+    align-self: self-end;
+    justify-self: center;
+    z-index: 2;
+}
+
+.content__right img {
+    width: calc(25vw / 3);
+    transform: translateX(140px);
+}
